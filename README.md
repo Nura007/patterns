@@ -1,0 +1,25 @@
+# Factory and Abstract Factory Patterns (Java)
+
+This project demonstrates the usage of two **creational design patterns**:  
+- **Factory Method**  
+- **Abstract Factory**  
+
+Both implementations follow the **Clean Code principles** (small functions, meaningful names, single responsibility, no long constructors).
+
+---
+
+## 🏭 Factory Method Pattern
+
+The **Factory Method Pattern** defines an interface for creating an object but lets subclasses decide which class to instantiate.  
+
+In this project:  
+- `Workout` is the product (interface).  
+- `CardioWorkout` and `StrengthWorkout` are concrete products.  
+- `WorkoutFactory` is the creator (abstract class).  
+- `CardioWorkoutFactory` and `StrengthWorkoutFactory` are concrete factories.  
+- `FactoryDemo` is the client that uses factories to create workouts.
+
+### Run:
+```bash
+javac FactoryDemo.java
+java FactoryDemo
